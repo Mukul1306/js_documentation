@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Documentation</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    display: flex;
+  }
+
+  nav {
+    width: 260px;
+    height: 100vh;
+    background: #111;
+    color: #fff;
+    position: fixed;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  nav h2 {
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  nav a:hover {
+    background: #333;
+    color: #fff;
+  }
+
+  main {
+    margin-left: 270px;
+    padding: 20px;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    color: #222;
+  }
+
+  p {
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  code {
+    background: #eee;
+    padding: 5px;
+    display: block;
+    margin: 10px 0;
+  }
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>JS Docs</h2>
+  <a href="#intro">Introduction</a>
+  <a href="#datatypes">Data Types</a>
+  <a href="#variables">Variables</a>
+  <a href="#arrays">Arrays</a>
+  <a href="#objects">Objects</a>
+  <a href="#functions">Functions</a>
+  <a href="#callbacks">Callbacks</a>
+  <a href="#closures">Closures</a>
+  <a href="#hoisting">Hoisting</a>
+  <a href="#promise">Promises</a>
+  <a href="#timeout">setTimeout</a>
+</nav>
+
+<main>
+
+<section id="intro">
+  <h1>Introduction</h1>
+  <p>This documentation covers JavaScript fundamentals and advanced concepts including closures, promises, and asynchronous behavior.</p>
+</section>
+
+<section id="datatypes">
+  <h1>Data Types</h1>
+  <p>JavaScript has primitive and non-primitive data types.</p>
+  <ul>
+    <li>Primitive: string, number, boolean</li>
+    <li>Non-Primitive: object, array</li>
+  </ul>
+</section>
+
+<section id="variables">
+  <h1>Variables</h1>
+  <p>JavaScript has var, let, and const.</p>
+  <code>
+let a = 10;
+const b = 20;
+  </code>
+</section>
+
+<section id="arrays">
+  <h1>Arrays</h1>
+  <p>Used to store multiple values.</p>
+  <code>
+let arr = [1,2,3];
+arr.map(x => x * 2);
+  </code>
+</section>
+
+<section id="objects">
+  <h1>Objects</h1>
+  <p>Objects store key-value pairs.</p>
+  <code>
+let user = {name: "Mukul", age: 21};
+  </code>
+</section>
+
+<section id="functions">
+  <h1>Functions</h1>
+  <p>Functions are reusable blocks of code.</p>
+  <code>
+const add = (a,b) => a + b;
+  </code>
+</section>
+
+<section id="callbacks">
+  <h1>Callback Functions</h1>
+  <p>A callback is a function passed into another function.</p>
+  <code>
+function greet(name, callback) {
+  console.log(name);
+  callback();
+}
+  </code>
+</section>
+
+<section id="closures">
+  <h1>Closures</h1>
+  <p>Closures allow a function to access variables from outer scope.</p>
+  <code>
+function outer(){
+ let count = 0;
+ return function(){
+   count++;
+ }
+}
+  </code>
+</section>
+
+<section id="hoisting">
+  <h1>Hoisting</h1>
+  <p>Variables and functions are moved to top during execution.</p>
+</section>
+
+<section id="promise">
+  <h1>Promises</h1>
+  <p>Promises handle asynchronous operations.</p>
+  <code>
+new Promise((res,rej)=>{});
+  </code>
+</section>
+
+<section id="timeout">
+  <h1>setTimeout</h1>
+  <p>Used to delay execution.</p>
+  <code>
+setTimeout(()=>console.log("Hi"),1000);
+  </code>
+</section>
+
+</main>
+
+</body>
+</html>
